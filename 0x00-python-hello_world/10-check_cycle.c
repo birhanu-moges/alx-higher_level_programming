@@ -12,18 +12,19 @@ int check_cycle(listint_t *list)
 	listint_t *sp, *fp;
 	unsigned int flag = 0;
 
-	if (list == NULL)
+	if (list == NULL || list->next == NULL)
 		return (0);
-	sp = fp = list;
+	sp = list->next;
+	fp = list->next->next;
 	while (sp && fp && fp->next)
 	{
-		sp = sp->next;
-		fp = sp->next->next;
 		if (sp == fp)
 		{
 			flag = 1;
 			break;
 		}
+		sp = list->next;
+		fp = list->next->next;
 	}
 	return (flag);
 }
