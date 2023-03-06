@@ -23,8 +23,8 @@ int check_cycle(listint_t *list)
 			flag = 1;
 			break;
 		}
-		sp = list->next;
-		fp = list->next->next;
+		sp = sp->next;
+		fp = fp->next->next;
 	}
 	return (flag);
 }
