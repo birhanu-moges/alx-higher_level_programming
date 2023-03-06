@@ -9,12 +9,12 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *sp, *fp, *tmp;
+	listint_t *sp, *fp;
 	unsigned int flag = 0;
 
-	if (head == NULL)
+	if (list == NULL)
 		return (0);
-	sp = fp = tmp = head;
+	sp = fp = list;
 	while (sp && fp && fp->next)
 	{
 		sp = sp->next;
