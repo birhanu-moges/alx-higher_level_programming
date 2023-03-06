@@ -13,7 +13,7 @@ int check_cycle(listint_t *list)
 	unsigned int flag = 0;
 
 	if (head == NULL)
-		return (NULL);
+		return (0);
 	sp = fp = tmp = head;
 	while (sp && fp && fp->next)
 	{
