@@ -6,8 +6,5 @@ if __name__ == "__main__":
         print("{:d} arguments:".format(n))
     elif n > 0:
         print("{:d} arguments:".format(n))
-        arglist = sys.argv[1:]
-        index = 1
-        for element in arglist:
-            print("{:d}: {:s}".format(index, element))
-            index += 1
+        for index in range(n):
+            print("{:d}: {:s}".format(index + 1, sys.argv[index + 1]))
