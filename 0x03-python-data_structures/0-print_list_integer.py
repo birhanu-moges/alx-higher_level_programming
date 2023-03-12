@@ -5,6 +5,5 @@ def print_list_integer(my_list=[]):
     Args:
       my_list: the list argument whose items will be printed
     """
-    for integer in my_list:
-        print("{:d}".format(integer))
-
+    for element in my_list:
+        print("{:d}".format(element))
