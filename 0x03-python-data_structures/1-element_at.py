@@ -2,9 +2,9 @@
 
 def element_at(my_list, idx):
     """Retrieves an element from a list at index idx
-    
+
     Args:
-        my_list: list argument 
+        my_list: list argument
         idx: given index in the list
 
         Returns:
