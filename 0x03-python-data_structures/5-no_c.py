@@ -9,8 +9,9 @@ def no_c(my_string):
     Returns:
         new string whitout c and C
     """
+    idx = 0
     new_str = ""
-    for str in my_string:
-        if str != 'c' or str != 'C':
-            new_str += str
+    for i in range(len(my_string)):
+        if my_string[i] != 'c' and my_string[i] != 'C':
+            new_str += my_string[i]
     return new_str
