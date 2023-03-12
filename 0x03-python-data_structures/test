@@ -1,20 +1,12 @@
 #!/usr/bin/python3
-# -----------------------------------------------------------
-# Python program that:
-# demonstrates how to print all integers of a list
-#
-# (C) 2022 Igbinijesu Samuel, Lagos, Nigeria
-# email igbinijesusamuel@gmail.com
-# -----------------------------------------------------------
 
+def print_reversed_list_integer(my_list=[]):
+    """print list in reversed order
 
-def print_list_integer(my_list=[]):
-    """Prints all intergers of a list
     Args:
-      my_list: the list argument whose items will be printed
+        my_list: list argument
+
     """
-
-    # Iterate through list
-    for integer in my_list:
-        print("{:d}".format(integer))
-
+    idx = len(my_list)-1
+    for i in range(idx, -1, -1):
+        print('{:d}'.format(my_list[i]))
