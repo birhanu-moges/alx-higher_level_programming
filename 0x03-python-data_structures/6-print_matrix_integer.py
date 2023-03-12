@@ -10,10 +10,12 @@ def print_matrix_integer(matrix=[[]]):
     if not matrix:
         print()
     else:
-        for i in range(len(matrix)):
-            for j in range(len(matrix[i])):
-                if j <= (len(matrix[i]) - 1):
-                    print('{:d}'.format(matrix[i][j]), end=" ")
+        for i in matrix:
+            l = 1
+            for j in i:
+                if l == len(i):
+                    print("{:d}".format(j), end="")
                 else:
-                    print('{:d}'.format(matrix[i][j]), end="")
+                    print("{:d}".format(j), end=" ")
+                l = l + 1
             print()
