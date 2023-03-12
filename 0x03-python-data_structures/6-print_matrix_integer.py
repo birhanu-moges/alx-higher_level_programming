@@ -11,11 +11,11 @@ def print_matrix_integer(matrix=[[]]):
         print()
     else:
         for i in matrix:
-            l = 1
+            pos = 1
             for j in i:
-                if l == len(i):
+                if pos == len(i):
                     print("{:d}".format(j), end="")
                 else:
                     print("{:d}".format(j), end=" ")
-                l = l + 1
+                pos = pos + 1
             print()
