@@ -1,1 +1,0 @@
-Statci library project files

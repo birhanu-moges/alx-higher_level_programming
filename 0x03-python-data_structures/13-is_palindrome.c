@@ -20,8 +20,8 @@ int is_palindrome(listint_t **head)
 		fast_ptr = fast_ptr->next->next;
 		tmp->next = previous;
 		previous = tmp;
-		tmp = slow_ptr;
 		slow_ptr = slow_ptr->next;
+		tmp = slow_ptr;
 	}
 	if (fast_ptr != NULL)
 		slow_ptr = slow_ptr->next;
