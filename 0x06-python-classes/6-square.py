@@ -7,12 +7,17 @@ class Square:
     """class defined for square
     """
     def __init__(self, size=0, position=(0, 0)):
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-        if size < 0:
-            raise ValueError('size must be >= 0')
-        self.size = size
-        self.position = position
+        self.__size = size
+        self.__position = position
+
+    @property
+    def position(self):
+        """__position getter, setter with same method name
+        Returns:
+            __position (tuple) ((int), (int)): horizontal offset in spaces,
+            vertical offset in newlines
+        """
+        return self.__position
 
     @position.setter
     def position(self, value):
