@@ -104,4 +104,3 @@ class Square:
                 print()
 
 #        print("size: {} position: {}".format(self.__size, self.__position))
-
