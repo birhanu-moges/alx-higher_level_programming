@@ -87,7 +87,7 @@ class Rectangle:
             string: string representation of object
         """
         string = ""
-        if self.__width == 0 or slef.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         for row in range(self.__height):
             for col in range(self.__width):
