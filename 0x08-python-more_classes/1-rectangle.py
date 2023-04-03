@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""
-Module creates the Rectangle class
+"""Module creates the Rectangle class
 """
 
 
 class Rectangle:
-    """
-    Class Rectangle with validated private instance attributes width and height
+    """Class Rectangle with validated private instance attributes width and height
     """
 
     def __init__(self, width=0, height=0):
@@ -23,17 +21,24 @@ class Rectangle:
     @property
     def width(self):
         """width: width of rectangle
-        setter validates value is an integer >= 0
-        Parameter:
-            value: value of the width
-        Raises:
-            TypeError: if value is not an integer
-            ValueError: if value is < 0
+
+        Returns:
+            width: value of the width
+
         """
         return self.__width
 
     @width.setter
     def width(self, value):
+         """width: width of rectangle
+        setter validates value is an integer >= 0
+        Args:
+            value: value of the height
+        Raises:
+            TypeError: if value is not an integer
+            ValueError: if value is < 0
+
+        """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -44,11 +49,12 @@ class Rectangle:
     def height(self):
         """height: height of rectangle
         setter validates value is an integer >= 0
-        Parameter:
+        Args:
             value: value of the height
         Raises:
             TypeError: if value is not an integer
             ValueError: if value is < 0
+
         """
         return self.__height
 
