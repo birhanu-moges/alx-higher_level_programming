@@ -15,14 +15,14 @@ class Rectangle:
             height: height of a rectangle
 
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
         """Return widht of a rectangle
 
-        Rturns:
+        Rturn:
             __width: width of a rectangle
 
         """
@@ -50,7 +50,7 @@ class Rectangle:
     def height(self):
         """returns height of a rectangle object
 
-        Returns:
+        Return:
             height: height of a rectangle
 
         """
