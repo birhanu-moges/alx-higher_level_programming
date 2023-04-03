@@ -20,7 +20,8 @@ class Rectangle:
     def width(self):
         """Return widht of a rectangle
 
-        Rturns: width
+        Rturns:
+            __width: width of a rectangle
         """
         return self.__width
 
@@ -28,7 +29,8 @@ class Rectangle:
     def width(self, value):
         """set value to widht of a rectangle
 
-        Args: value to widht of a rectangle
+        Args:
+            value: to set widht of a rectangle
 
         Raises:
             TypeError: if value is not an int
@@ -44,7 +46,8 @@ class Rectangle:
     def height(self):
         """returns height of a rectangle object
 
-        Returns: height of a rectangle
+        Returns:
+            height: height of a rectangle
         """
         return self.__height
 
@@ -52,7 +55,8 @@ class Rectangle:
     def height(self, value):
         """set value to height of a rectangel
 
-        Args:  value to be set for height of a rectangle
+        Args:
+            value: to be set for height of a rectangle
 
         Raises:
             TypeError: if value is not an int
