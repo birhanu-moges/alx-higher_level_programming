@@ -8,10 +8,11 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """Instantiates widht and height of a rectangle
-        
+
         Args:
             width: widht of rectangle
             height: height of a rectangle
+
         """
         self.width = width
         self.height = height
@@ -22,6 +23,7 @@ class Rectangle:
 
         Rturns:
             __width: width of a rectangle
+
         """
         return self.__width
 
@@ -35,6 +37,7 @@ class Rectangle:
         Raises:
             TypeError: if value is not an int
             ValueError: if value is less than 0
+
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
@@ -48,6 +51,7 @@ class Rectangle:
 
         Returns:
             height: height of a rectangle
+
         """
         return self.__height
 
@@ -61,6 +65,7 @@ class Rectangle:
         Raises:
             TypeError: if value is not an int
             ValueError: if value is less than 0
+
         """
         if type(value) is not int:
             raise TypeError("width must be an integer")
