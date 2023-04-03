@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""""Class that defines a Rectangle"""
+"""Class that defines a Rectangle"""
 
 
 class Rectangle:
@@ -27,7 +27,7 @@ class Rectangle:
     def width(self):
         """Return widht of a rectangle
 
-        Rturns:
+        Returns:
             int: width of a rectangle
         """
         return self.__width
