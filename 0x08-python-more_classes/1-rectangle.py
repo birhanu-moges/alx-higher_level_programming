@@ -11,6 +11,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Instantiates width and height using property setter
+
         Args:
             width: width of rectangle
             height: height of rectangle
