@@ -8,6 +8,8 @@ class MyList(list):
     """
     class to work on printing sorted list
     """
+    pass
+
     def print_sorted(self):
         """
         method to print sorted list
