@@ -12,4 +12,4 @@ def write_file(filename="", text=""):
         text: text content to be written to a file
     """
     with open(filename, 'w', encoding='utf-8') as fd:
-        print(fd.write(text))
+        return (fd.write(text))
