@@ -13,7 +13,8 @@ def append_after(filename="", search_string="", new_string=""):
             for search_string in line:
                 if search_string == new_string:
                     out += new_string
-                Out += search_string
+                else:
+                    Out += search_string
 
     with open(filename, 'w') as fd:
         f.write(out)
