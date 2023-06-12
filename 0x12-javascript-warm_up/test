@@ -11,5 +11,9 @@ if (process.argv.length <= 3) {
       largest = list[i];
     }
   }
-  console.log(seclargest);
+  if (seclargest === largest) {
+    console.log(0);
+  } else {
+    console.log(seclargest);
+  }
 }
