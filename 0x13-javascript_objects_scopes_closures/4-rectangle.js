@@ -18,9 +18,7 @@ class Rectangle {
   }
 
   rotate () {
-    const tmp = this.width;
-    this.widht = this.height;
-    this.height = tmp;
+    [this.width, this.height] = [this.height, this.widht];
   }
 
   double () {
