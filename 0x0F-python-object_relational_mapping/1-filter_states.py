@@ -9,6 +9,6 @@ if __name__ == "__main__":
                          passwd=argv[2], db=argv[3], charset="utf8")
     cur = db.cursor()
     cur.execute("SELECT * FROM `states` ORDER BY `id`")
-    [print(state) for state in c.fetchall() if state[1][0] == "N"]
+    [print(state) for state in cur.fetchall() if state[1][0] == "N"]
     cur.close()
     db.close()
