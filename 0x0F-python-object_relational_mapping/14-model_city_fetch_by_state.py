@@ -12,8 +12,6 @@ if __name__ == "__main__":
         argv[1], argv[2], argv[3]), pool_pre_ping=True)
     Base.metadata.create_all(engine)
     session = Session(bind=engine)
-    for city, state in session.query(City, State) \
-                              .filter(City.state_id == State.id) \
-                              .order_by(City.id):
-        print("{}: ({}) {}".format(state.name, city.id, city.name))
+    for instance in session.query(State).order_by(State.id):
+        print("{}: {}".format(instance.id, instance.name))
     session.close()
