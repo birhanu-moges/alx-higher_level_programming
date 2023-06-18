@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """Adds State object to database
-Takes three arguments
-    mysql username
-    mysql password
-    database name
-Connects to host localhost and default port (3306)
 """
+from sqlalchemy import (create_engine)
+from sqlalchemy.orm import sessionmaker
+from model_state import Base, State
+from sys import argv
+
 if __name__ == "__main__":
     from sqlalchemy import (create_engine)
     from sqlalchemy.orm import sessionmaker
